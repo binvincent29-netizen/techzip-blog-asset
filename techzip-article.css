@@ -1,0 +1,289 @@
+/* TechZip article CSS.
+   Safe scope: every style is limited to .tz-article. */
+
+.tz-article {
+  --tz-text: #17201d;
+  --tz-muted: #68726e;
+  --tz-line: #d6ddd8;
+  --tz-accent: #14b8a6;
+  --tz-accent-deep: #0f766e;
+  --tz-guide: #64748b;
+  --tz-card: #ffffff;
+  --tz-soft: #f3f7f6;
+  --tz-mint: #dff7ef;
+  --tz-warm: #fff8e8;
+  --tz-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: 0 auto 32px;
+  padding: 34px 42px 48px;
+  border: 1px solid var(--tz-line);
+  border-radius: 8px;
+  background: var(--tz-card);
+  box-shadow: var(--tz-shadow);
+  color: var(--tz-text);
+  font: 17px/1.72 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.tz-article *,
+.tz-article *::before,
+.tz-article *::after {
+  box-sizing: border-box;
+}
+
+.tz-article > *:first-child {
+  margin-top: 0;
+}
+
+.tz-article p {
+  margin: 0 0 17px;
+}
+
+.tz-article a {
+  color: var(--tz-accent-deep);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.tz-article strong {
+  color: #151b18;
+}
+
+.tz-article code {
+  border: 1px solid #e1ddd5;
+  border-radius: 5px;
+  background: #f7f4ef;
+  color: #7c2d12;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+
+.tz-article .lead {
+  margin-bottom: 20px;
+  color: #35413b;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.tz-article .toc-box,
+.tz-article .summary-box,
+.tz-article .source-box {
+  border-radius: 8px;
+  margin: 24px 0;
+  padding: 18px 20px;
+}
+
+.tz-article .toc-box {
+  border: 1px solid var(--tz-line);
+  background: #fffdf8;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.tz-article .toc-box strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--tz-accent-deep);
+  font-size: 15px;
+}
+
+.tz-article .toc-box ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tz-article .toc-box li + li {
+  margin-top: 6px;
+}
+
+.tz-article .summary-box {
+  border: 1px solid #b7dcd4;
+  background: var(--tz-mint);
+  color: #26352f;
+}
+
+.tz-article .source-box {
+  border: 1px solid #e1c98f;
+  background: var(--tz-warm);
+  color: #3d3526;
+}
+
+.tz-article h2 {
+  margin: 44px 0 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--tz-line);
+  color: var(--tz-text);
+  font: 800 26px/1.38 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+  letter-spacing: 0;
+  scroll-margin-top: 96px;
+}
+
+.tz-article h2::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 3px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: var(--tz-accent);
+}
+
+.tz-article h3 {
+  margin: 26px 0 11px;
+  padding-left: 12px;
+  border-left: 3px solid var(--tz-guide);
+  color: #2d3833;
+  font: 750 20px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+}
+
+.tz-article ul,
+.tz-article ol {
+  padding-left: 24px;
+}
+
+.tz-article li + li {
+  margin-top: 6px;
+}
+
+.tz-article blockquote {
+  margin: 24px 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--tz-accent);
+  border-radius: 0 8px 8px 0;
+  background: #f5fbf9;
+  color: #34443e;
+  font: inherit;
+  text-align: left;
+}
+
+.tz-article blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.tz-article table {
+  width: 100%;
+  margin: 24px 0 26px;
+  border: 1px solid var(--tz-line);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--tz-card);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tz-article th {
+  border: 0;
+  background: #104c43;
+  color: #ffffff;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.tz-article td {
+  border: 0;
+  border-top: 1px solid var(--tz-line);
+  background: var(--tz-card);
+  padding: 13px 14px;
+  vertical-align: top;
+}
+
+.tz-article tr:nth-child(even) td {
+  background: #f6faf8;
+}
+
+.tz-article .action-row {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0;
+}
+
+.tz-article .action-button {
+  position: relative;
+  width: min(100%, 420px);
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(15, 118, 110, 0.25);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 52%, #22c55e 100%);
+  color: #052e2b;
+  padding: 12px 62px 12px 22px;
+  box-shadow: 0 14px 26px rgba(20, 184, 166, 0.28);
+  font-size: 17px;
+  font-weight: 850;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.tz-article .action-button::after {
+  content: ">";
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(5, 46, 43, 0.16);
+  color: #052e2b;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.tz-article .action-button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #5eead4 0%, #2dd4bf 52%, #34d399 100%);
+  box-shadow: 0 18px 34px rgba(20, 184, 166, 0.34);
+  color: #052e2b;
+  text-decoration: none;
+}
+
+.tz-article .action-button:focus-visible {
+  outline: 3px solid rgba(20, 184, 166, 0.35);
+  outline-offset: 3px;
+}
+
+@media (min-width: 700px) {
+  .tz-article .toc-box ol {
+    columns: 2;
+    column-gap: 28px;
+  }
+
+  .tz-article .toc-box li {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 640px) {
+  .tz-article {
+    padding: 24px 20px 36px;
+    font-size: 16px;
+  }
+
+  .tz-article .lead {
+    font-size: 18px;
+  }
+
+  .tz-article h2 {
+    font-size: 23px;
+  }
+
+  .tz-article h3 {
+    font-size: 18px;
+  }
+
+  .tz-article table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
